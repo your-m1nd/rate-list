@@ -40,8 +40,7 @@ function App() {
       <div className="container">
    {
     rateList.map((rate) =>
-    <Rate 
-    name={rate.name} url={rate.url} speed={rate.speed} traffic={rate.traffic} isSelected={rate.isSelected} />
+    <Rate key={rate.name} name={rate.name} url={rate.url} speed={rate.speed} traffic={rate.traffic} isSelected={rate.isSelected} />
     ) 
   }
   </div>
